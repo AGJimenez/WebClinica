@@ -1,0 +1,456 @@
+@font-face {
+    font-family: "roboto" ;
+    src: url(Roboto-Regular.ttf);
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "roboto";
+    margin: 0;
+    background-color: rgb(255, 255, 255); box-sizing: border-box;
+}
+.menu-contenedor{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin: auto;
+}
+ul.menu{
+    list-style-type: none;
+    margin: auto;
+    padding-left: 25%;
+    overflow: hidden;
+    font-weight: lighter;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    box-shadow:0px 10px 5px rgb(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.logotop{
+    margin: auto;
+}
+
+li{
+    float: left;
+}
+li.sobre-nosotros{
+    float: left; 
+}
+
+li a {
+    display: block;
+    padding: 20px; 
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+  }
+
+li a:active{
+    color: turquoise;
+}  
+  
+li a:hover:not(.active):active{
+    color: turquoise;
+}
+
+li a:hover:not(.active){
+    color: white;
+    background-color: rgb(255, 144, 162);
+}
+.active {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+h1.cita-foto{
+    position: absolute;
+    width: auto;
+    height: auto;
+    font-size: 80px;
+    margin-left: 200px;
+    margin-top: 125px;
+    background-color:  rgb(255, 98, 124);
+    padding: 20px;
+    border-radius: 50px;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    
+}
+
+.cita-enlace{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    
+}
+.cita-enlace:hover{
+    color: rgb(0, 0, 0);
+}
+.friso{
+    background-size:auto;
+    width: 100%;
+    
+}
+.contenido{
+    margin: 5%;
+}
+p.lema{
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 50%;
+    color: #2c2c2c;
+}
+p.lema-principal{
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+    
+    color: #2c2c2c;
+}
+p.lema-2{
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+    color: #2c2c2c;
+    padding-left: 50%;
+}
+p.sublema{
+    text-align: left;
+    color: lightslategrey;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 5px;
+    border-left: 2px solid #2c2c2c;
+}
+p.sublema-2{
+    text-align: right;
+    color: lightslategrey;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-right: 5px;
+    border-right: 2px solid #2c2c2c;
+}
+.contenedor{
+    margin:auto;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+   
+}
+
+.tarjeta{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow:0px 1px 10px rgb(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+.tarjeta:hover{
+    box-shadow:5px 5px 20px rgb(0, 0, 0, 0.4);
+    transform: translateY(3%);
+    background-image: linear-gradient(aliceblue,rgb(255, 236, 236));
+}
+.tarjeta img{
+    width: 100%;
+    height: 210px;
+}
+.tarjeta .tarjeta-contenido{
+    padding: 15px;
+    text-align: center;
+    
+}
+.tarjeta .tarjeta-contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.tarjeta .tarjeta-contenido h3{
+    font-weight: 400;
+    margin-top: -10px;
+}
+.tarjeta .tarjeta-contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(255, 98, 124);
+    border: 1px solid rgb(255, 98, 124);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.tarjeta .tarjeta-contenido a:hover{
+    background-color:  rgb(255, 98, 124);
+    color: white;
+}
+footer{
+  
+    left: 0;
+    bottom: 0;
+    padding: 2rem 8%;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social-iconos-contenedor, .footer-menu-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.social-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 98, 124);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    
+}
+.social-icon:hover{
+    background-color:rgb(255, 98, 124);
+}
+.social-icon:nth-child(odd){
+    background-image: url(iglogo.png);
+}
+.social-icon:nth-child(even){
+    background-image: url(fblogo.png);
+}
+.footer-menu-contenedor{
+    list-style-type: none;
+    color: rgb(255, 98, 124);
+    font-size: 18px;
+}
+.menu-objeto{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+
+}
+.menu-objeto:hover{
+    opacity: 1;
+}
+.copyright{
+    color: rgb(255, 98, 124);
+    opacity: 0.3;
+    text-align: center;
+}
+
+.contenedor-mapa{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1.mapa-titulo{
+    font-weight: lighter;
+    margin-bottom: 60px;
+}
+iframe{
+    width: 60%;
+    height: 500px;
+    border-radius: 30px;
+ 
+    background-color:aliceblue;
+    transition: all 400ms;
+    box-shadow:0px 1px 10px rgb(0, 0, 0, 0.2);
+}
+iframe:hover{
+    transform: translateY(-3px);
+    box-shadow:0px 1px 10px rgb(0, 0, 0, 0.7);
+}
+h1.mapa-titulo2{
+    font-weight: lighter;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.telefono-foto{
+    
+    margin-right: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+form{
+    margin-left: 35%;
+    margin-right:35%;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: auto;
+    background-color: #2c2c2c;
+    overflow: hidden;
+    color: rgb(255, 98, 124, 0.7);
+    border-radius: 20px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2rem;
+}
+form input{
+    width: auto;
+    height: auto;
+}
+table {
+    margin: 25%;
+    margin-top: 0;
+    width: 50%;
+    border-collapse: collapse;
+    background-image: linear-gradient(rgba(255, 202, 211, 0.7), white);
+  }
+  
+  th, td {
+    border: 2px solid rgb(71, 71, 71);
+    padding: 8px;
+    text-align: center;
+    
+  }
+  
+  th {
+    background-color:rgb(255, 98, 124, 0.7);
+  }
+    td:hover {
+    background-color: coral;
+    color: aliceblue;
+  }
+  .fondo{
+    width: 100%;
+    height: 100vh;
+    background-image: url(mental1.webp);
+    background-attachment: fixed;
+    z-index: -1;
+    position: fixed;
+    opacity: 0.1;
+  }
+  .contenido-faq{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .contenido-faq h2{
+    color: rgb(255, 98, 124);
+    position: relative;
+    width: 23rem;
+    text-align: center;
+  }
+  .acordeon{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #2c2c2c;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    background-color: rgba(255, 253, 253, 0.76);
+  }
+  
+  .acordeon .icono img{
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    float: left;
+    transition: all .5s ease-in;
+    border-radius: 50%;
+  }
+
+  .acordeon h5{
+    font-size: 22px;
+    margin: 0;
+    padding: 9px;
+    font-weight: normal;
+    color:  rgb(255, 98, 124);
+  }
+
+  .panel{
+    padding: 0 15px;
+    border-left: 1px solid #2c2c2c;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+  }
+
+  .active .icono{
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    
+  }
+  
+  .active{
+    background-color: rgba(255, 98, 124, 0.411);
+    color: #fff;
+  }
+
+
+
+  .contenedor-de-flips{
+    margin:auto;
+    width: 100%;
+    display: flex;
+    max-width: fit-content;
+
+}
+
+  .flip-card {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    margin:20px;
+    border: 1px solid  rgb(0, 0, 0, 0.2);
+    perspective: 1000px; 
+    
+  }
+  
+  /* Sleccionamos la posicion de inico */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+ 
+  /* hacemos un flip horizonatal */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* posicionamos el fron y el back */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+  }
+  
+  /* La parte de atrás */
+  .flip-card-back {
+    background-color:rgb(255, 98, 124);
+    color: white;
+    transform: rotateY(180deg);
+  }
